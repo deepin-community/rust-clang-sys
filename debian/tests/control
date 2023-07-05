@@ -1,0 +1,104 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clang-sys 1.3.0 --all-targets --all-features
+Features: test-name=rust-clang-sys:@
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clang-sys 1.3.0 --all-targets --no-default-features --features clang_10_0
+Features: test-name=librust-clang-sys-dev:clang_10_0
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clang-sys 1.3.0 --all-targets --no-default-features --features clang_11_0
+Features: test-name=librust-clang-sys-dev:clang_11_0
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clang-sys 1.3.0 --all-targets --no-default-features --features clang_12_0
+Features: test-name=librust-clang-sys-dev:clang_12_0
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clang-sys 1.3.0 --all-targets --no-default-features --features clang_13_0
+Features: test-name=librust-clang-sys-dev:clang_13_0
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clang-sys 1.3.0 --all-targets --no-default-features --features clang_3_5
+Features: test-name=librust-clang-sys-dev:clang_3_5
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clang-sys 1.3.0 --all-targets --no-default-features --features clang_3_6
+Features: test-name=librust-clang-sys-dev:clang_3_6
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clang-sys 1.3.0 --all-targets --no-default-features --features clang_3_7
+Features: test-name=librust-clang-sys-dev:clang_3_7
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clang-sys 1.3.0 --all-targets --no-default-features --features clang_3_8
+Features: test-name=librust-clang-sys-dev:clang_3_8
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clang-sys 1.3.0 --all-targets --no-default-features --features clang_3_9
+Features: test-name=librust-clang-sys-dev:clang_3_9
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clang-sys 1.3.0 --all-targets --no-default-features --features clang_4_0
+Features: test-name=librust-clang-sys-dev:clang_4_0
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clang-sys 1.3.0 --all-targets --no-default-features --features clang_5_0
+Features: test-name=librust-clang-sys-dev:clang_5_0
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clang-sys 1.3.0 --all-targets --no-default-features --features clang_6_0
+Features: test-name=librust-clang-sys-dev:clang_6_0
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clang-sys 1.3.0 --all-targets --no-default-features --features clang_7_0
+Features: test-name=librust-clang-sys-dev:clang_7_0
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clang-sys 1.3.0 --all-targets --no-default-features --features clang_8_0
+Features: test-name=librust-clang-sys-dev:clang_8_0
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clang-sys 1.3.0 --all-targets --no-default-features --features clang_9_0
+Features: test-name=librust-clang-sys-dev:clang_9_0
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clang-sys 1.3.0 --all-targets 
+Features: test-name=librust-clang-sys-dev:default
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clang-sys 1.3.0 --all-targets --no-default-features --features static
+Features: test-name=librust-clang-sys-dev:static
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clang-sys 1.3.0 --all-targets --no-default-features
+Features: test-name=librust-clang-sys-dev:
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clang-sys 1.3.0 --all-targets --no-default-features --features runtime
+Features: test-name=librust-clang-sys+libloading-dev:runtime
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clang-sys 1.3.0 --all-targets --no-default-features --features libloading
+Features: test-name=librust-clang-sys+libloading-dev:libloading
+Depends: dh-cargo (>= 18), @
+Restrictions: allow-stderr, skip-not-installable
